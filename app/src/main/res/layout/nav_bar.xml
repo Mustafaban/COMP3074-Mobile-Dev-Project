@@ -105,7 +105,8 @@
 
         <ImageView
             android:layout_width="24dp"
-            android:layout_height="24dp" />
+            android:layout_height="24dp"
+            android:src="@drawable/about"/>
 
         <TextView
             android:id="@+id/navAbout"
@@ -118,7 +119,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/navProfileContainer"
+        android:id="@+id/profileContainer"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -131,7 +132,8 @@
 
         <ImageView
             android:layout_width="24dp"
-            android:layout_height="24dp" />
+            android:layout_height="24dp"
+            android:src="@drawable/profile" />
 
         <TextView
             android:id="@+id/navProfile"
