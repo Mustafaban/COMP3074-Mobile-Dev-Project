@@ -1,5 +1,7 @@
 package com.example.comp3074_mobile_dev_project;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
