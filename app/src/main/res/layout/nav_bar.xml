@@ -49,13 +49,14 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:contentDescription="@string/search"
         android:orientation="vertical"
         android:gravity="center"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
         android:padding="8dp"
+        android:onClick="toSearch"
+        android:text="Search"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
