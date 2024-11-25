@@ -84,7 +84,9 @@
         android:gravity="center"
         android:clickable="true"
         android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
         android:padding="8dp"
+        android:onClick="toMap"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
@@ -102,6 +104,7 @@
             android:textStyle="bold"
             android:textSize="12sp" />
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/navAboutContainer"

@@ -1,12 +1,15 @@
 package com.example.comp3074_mobile_dev_project;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.comp3074_mobile_dev_project.views.search.SearchActivity;
@@ -74,4 +77,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
+
+    public void toMap(View view) {
+        // Open Google Maps using the browser-friendly URL
+        Uri mapsUri = Uri.parse("https://www.google.com/maps/search/Restaurants/@43.6732228,-79.4366746,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D");
+        Intent intent = new Intent(Intent.ACTION_VIEW, mapsUri);
+
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            // Notify the user if no application is available
+            Toast.makeText(this, "No maps application or browser available.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
 }
