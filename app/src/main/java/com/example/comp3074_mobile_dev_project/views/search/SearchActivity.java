@@ -1,8 +1,10 @@
 package com.example.comp3074_mobile_dev_project.views.search;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -12,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.comp3074_mobile_dev_project.AboutActivity;
+import com.example.comp3074_mobile_dev_project.MainActivity;
 import com.example.comp3074_mobile_dev_project.R;
 import com.example.comp3074_mobile_dev_project.models.Restaurant;
 import com.example.comp3074_mobile_dev_project.services.RestaurantService;
@@ -54,5 +58,21 @@ public class SearchActivity extends AppCompatActivity {
     private void filter(String name) {
         restaurantAdapter = new RestaurantAdapter(restaurantService.getRestaurants(name), this);
         listView.setAdapter(restaurantAdapter);
+    }
+
+    // Navigation bar methods
+    public void toHome(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void toAbout(View view) {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+    public void toSearch(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
     }
 }

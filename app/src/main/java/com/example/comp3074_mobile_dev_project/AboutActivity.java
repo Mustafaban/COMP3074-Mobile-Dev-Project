@@ -8,6 +8,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.comp3074_mobile_dev_project.views.search.SearchActivity;
+
 public class AboutActivity extends AppCompatActivity {
 
     @Override
@@ -50,6 +52,11 @@ public class AboutActivity extends AppCompatActivity {
 
     public void toAbout(View view) {
         Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+    public void toSearch(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
 }
