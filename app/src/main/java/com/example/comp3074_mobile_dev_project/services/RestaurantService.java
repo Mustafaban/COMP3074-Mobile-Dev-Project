@@ -33,6 +33,16 @@ public class RestaurantService {
         return restaurants;
     }
 
+    public List<Restaurant> getRestaurants(String name) {
+
+        List<Restaurant> filteredList = new ArrayList<>();
+        for (Restaurant restaurant : restaurants) {
+            if (restaurant.getName().toLowerCase().contains(name.toLowerCase())) {
+                filteredList.add(restaurant);
+            }
+        }
+        return filteredList;
+    }
     public Restaurant getRestaurantById(String id) {
         for (Restaurant restaurant : restaurants) {
             if (restaurant.getId().equals(id)) {

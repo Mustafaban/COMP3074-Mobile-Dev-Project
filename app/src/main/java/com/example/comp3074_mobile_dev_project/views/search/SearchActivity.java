@@ -22,7 +22,7 @@ import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
 
-    private List<Restaurant> restaurantList;
+    private final RestaurantService restaurantService = new RestaurantService();
     private RestaurantAdapter restaurantAdapter;
     private ListView listView;
 
@@ -32,7 +32,7 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         EditText searchBar = findViewById(R.id.search_bar);
         listView = findViewById(R.id.list_view);
-        restaurantList = new RestaurantService().getRestaurants();
+        List<Restaurant> restaurantList = restaurantService.getRestaurants();
         restaurantAdapter = new RestaurantAdapter(restaurantList, this);
         listView.setAdapter(restaurantAdapter);
         searchBar.addTextChangedListener(new TextWatcher() {
@@ -51,14 +51,8 @@ public class SearchActivity extends AppCompatActivity {
         });
     }
 
-    private void filter(String text) {
-        List<Restaurant> filteredList = new ArrayList<>();
-        for (Restaurant restaurant : restaurantList) {
-            if (restaurant.getName().toLowerCase().contains(text.toLowerCase())) {
-                filteredList.add(restaurant);
-            }
-        }
-        restaurantAdapter = new RestaurantAdapter(filteredList, this);
+    private void filter(String name) {
+        restaurantAdapter = new RestaurantAdapter(restaurantService.getRestaurants(name), this);
         listView.setAdapter(restaurantAdapter);
     }
 }
