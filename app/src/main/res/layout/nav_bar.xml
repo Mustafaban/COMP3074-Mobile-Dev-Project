@@ -35,7 +35,8 @@
             android:gravity="center"
             android:text="Home"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toHome"/>
     </LinearLayout>
 
     <LinearLayout
@@ -62,7 +63,8 @@
             android:gravity="center"
             android:text="Search"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toSearch"/>
     </LinearLayout>
 
     <LinearLayout
@@ -88,7 +90,8 @@
             android:gravity="center"
             android:text="Map"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toMap"/>
     </LinearLayout>
 
     <LinearLayout
@@ -115,7 +118,8 @@
             android:gravity="center"
             android:text="About"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toAbout"/>
     </LinearLayout>
 
     <LinearLayout
@@ -142,7 +146,8 @@
             android:gravity="center"
             android:text="Profile"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toProfile"/>
     </LinearLayout>
 
 </LinearLayout>
