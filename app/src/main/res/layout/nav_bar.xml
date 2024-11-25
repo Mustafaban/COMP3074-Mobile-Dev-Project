@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:baselineAligned="false"
     android:orientation="horizontal"
     android:background="#2C2C2C"
     android:padding="8dp"
@@ -21,11 +22,13 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:onClick="toHome">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/home"
             android:src="@drawable/home" />
 
         <TextView
@@ -33,9 +36,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Home"
+            android:text="@string/home"
             android:textStyle="bold"
             android:textSize="12sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -43,6 +47,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:contentDescription="@string/search"
         android:orientation="vertical"
         android:gravity="center"
         android:clickable="true"
@@ -60,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Search"
+            android:text="@string/search"
             android:textStyle="bold"
             android:textSize="12sp" />
     </LinearLayout>
@@ -86,7 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Map"
+            android:text="@string/map"
             android:textStyle="bold"
             android:textSize="12sp" />
     </LinearLayout>
@@ -101,7 +106,8 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:onClick="toAbout">
 
         <ImageView
             android:layout_width="24dp"
@@ -113,9 +119,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="About"
+            android:text="@string/about"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:onClick="toAbout"/>
     </LinearLayout>
 
     <LinearLayout
@@ -140,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Profile"
+            android:text="@string/profile"
             android:textStyle="bold"
             android:textSize="12sp" />
     </LinearLayout>
