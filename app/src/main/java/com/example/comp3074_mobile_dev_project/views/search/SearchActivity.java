@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.comp3074_mobile_dev_project.AboutActivity;
 import com.example.comp3074_mobile_dev_project.MainActivity;
+import com.example.comp3074_mobile_dev_project.ProfileActivity;
 import com.example.comp3074_mobile_dev_project.R;
 import com.example.comp3074_mobile_dev_project.models.Restaurant;
 import com.example.comp3074_mobile_dev_project.services.RestaurantService;
@@ -73,6 +74,10 @@ public class SearchActivity extends AppCompatActivity {
 
     public void toSearch(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 }

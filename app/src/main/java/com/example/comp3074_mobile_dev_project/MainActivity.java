@@ -91,5 +91,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
 
 }
