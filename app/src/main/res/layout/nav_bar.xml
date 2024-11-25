@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
@@ -23,7 +24,8 @@
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
         android:padding="8dp"
-        android:onClick="toHome">
+        android:onClick="toHome"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="24dp"
@@ -53,11 +55,13 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
+        android:padding="8dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/search"
             android:src="@drawable/search" />
 
         <TextView
@@ -79,11 +83,13 @@
         android:gravity="center"
         android:clickable="true"
         android:focusable="true"
-        android:padding="8dp">
+        android:padding="8dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/map"
             android:src="@drawable/map" />
 
         <TextView
@@ -107,11 +113,13 @@
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
         android:padding="8dp"
-        android:onClick="toAbout">
+        android:onClick="toAbout"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/about"
             android:src="@drawable/about"/>
 
         <TextView
@@ -135,11 +143,13 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
+        android:padding="8dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/profile"
             android:src="@drawable/profile" />
 
         <TextView
