@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.comp3074_mobile_dev_project.views.search.SearchActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-
 
     // Navigation bar methods
     public void toHome(View view) {

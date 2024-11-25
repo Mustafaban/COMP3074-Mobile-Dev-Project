@@ -13,6 +13,11 @@
         android:theme="@style/Theme.COMP3074MobileDevProject"
         tools:targetApi="31">
         <activity
+            android:name=".views.search.SearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.COMP3074MobileDevProject" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
