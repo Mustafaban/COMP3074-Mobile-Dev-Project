@@ -1,6 +1,7 @@
 package com.example.comp3074_mobile_dev_project;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,7 @@ public class ProfileActivity extends AppCompatActivity {
             TextView textView = new TextView(this);
             textView.setText(restaurant);
             textView.setTextSize(16);
+            textView.setTextColor(Color.parseColor("#FFFFFF"));
             likedRestaurantsContainer.addView(textView);
         }
 
@@ -57,6 +59,7 @@ public class ProfileActivity extends AppCompatActivity {
             TextView textView = new TextView(this);
             textView.setText(review[0] + ": " + review[1]);
             textView.setTextSize(16);
+            textView.setTextColor(Color.parseColor("#FFFFFF"));
             reviewsContainer.addView(textView);
         }
 

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C2C2C"
     tools:context=".views.search.SearchActivity">
 
     <include

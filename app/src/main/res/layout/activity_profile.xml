@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C2C2C"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <include
@@ -43,6 +44,7 @@
                     android:layout_marginTop="8dp"
                     android:text="John Doe"
                     android:textSize="18sp"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
                 <TextView
@@ -52,6 +54,7 @@
                     android:layout_marginTop="4dp"
                     android:text="john@example.com"
                     android:textSize="14sp"
+
                     android:textColor="#888888" />
             </LinearLayout>
 
@@ -60,11 +63,12 @@
                 android:id="@+id/liked_restaurants_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#f0f0f0"
+                android:background="#2C2C2C"
                 android:minHeight="48dp"
                 android:onClick="toggleLikedRestaurants"
                 android:padding="8dp"
                 android:text="Liked Restaurants"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -74,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="gone"
+                android:textColor="#FFFFFF"
                 android:padding="8dp">
                 <!-- Dynamically populate liked restaurants -->
             </LinearLayout>
@@ -83,12 +88,13 @@
                 android:id="@+id/reviews_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#f0f0f0"
+                android:background="#2C2C2C"
                 android:minHeight="48dp"
                 android:onClick="toggleReviews"
                 android:padding="8dp"
                 android:text="Reviews"
                 android:textSize="16sp"
+                android:textColor="#FFFFFF"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -98,6 +104,7 @@
                 android:orientation="vertical"
                 android:visibility="gone"
                 android:padding="8dp">
+
                 <!-- Dynamically populate reviews -->
             </LinearLayout>
 
