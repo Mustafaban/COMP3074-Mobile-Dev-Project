@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.comp3074_mobile_dev_project.models.WeatherData;
+import com.example.comp3074_mobile_dev_project.services.WeatherService;
 import com.example.comp3074_mobile_dev_project.views.search.SearchActivity;
 
 public class MainActivity extends AppCompatActivity {
