@@ -115,7 +115,7 @@ public class WeatherService {
     }
 
 
-    public String GetClimateImageUrl(WeatherData weatherData) {
+    public String GetWeatherImageUrl(WeatherData weatherData) {
         return String.format("https://openweathermap.org/img/wn/%s@2x.png", weatherData.getWeather().get(0).getIcon());
     }
 
