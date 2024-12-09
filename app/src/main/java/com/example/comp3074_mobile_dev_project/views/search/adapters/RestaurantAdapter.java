@@ -59,7 +59,7 @@ public class RestaurantAdapter extends BaseAdapter {
         TextView restaurantRating = convertView.findViewById(R.id.restaurant_rating);
         Button directionsButton = convertView.findViewById(R.id.directions_button);
         restaurantName.setText(restaurant.getName());
-        restaurantRating.setText("Rating: " + restaurant.getRating());  // Load image from assets (assuming images are stored in assets)
+        restaurantRating.setText("Rating: " + restaurant.getRating());
 
         InputStream inputStream = null;
         try {

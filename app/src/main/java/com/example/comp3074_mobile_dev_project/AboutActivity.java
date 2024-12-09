@@ -63,4 +63,16 @@ public class AboutActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+//    public void toWeather(View view) {
+//        Intent intent = new Intent(this, WeatherActivity.class);
+//        startActivity(intent);
+//    }
+    public void toMap(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+//dsadsadadsadsa
+    //asdsadsad
+    //asdasdsadsad
+
 }
