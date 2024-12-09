@@ -80,23 +80,34 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toMap(View view) {
-        // Open Google Maps using the browser-friendly URL
-        Uri mapsUri = Uri.parse("https://www.google.com/maps/search/Restaurants/@43.6732228,-79.4366746,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D");
-        Intent intent = new Intent(Intent.ACTION_VIEW, mapsUri);
-
-        try {
-            startActivity(intent);
-        } catch (Exception e) {
-            // Notify the user if no application is available
-            Toast.makeText(this, "No maps application or browser available.", Toast.LENGTH_SHORT).show();
-        }
-    }
+//    public void toMap(View view) {
+//        // Open Google Maps using the browser-friendly URL
+//        Uri mapsUri = Uri.parse("https://www.google.com/maps/search/Restaurants/@43.6732228,-79.4366746,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D");
+//        Intent intent = new Intent(Intent.ACTION_VIEW, mapsUri);
+//
+//        try {
+//            startActivity(intent);
+//        } catch (Exception e) {
+//            // Notify the user if no application is available
+//            Toast.makeText(this, "No maps application or browser available.", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 
     public void toProfile(View view) {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+    public void toWeather(View view) {
+        Intent intent = new Intent(this, WeatherActivity.class);
+        startActivity(intent);
+    }
+
+    public void toMap(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+
 
 
 }

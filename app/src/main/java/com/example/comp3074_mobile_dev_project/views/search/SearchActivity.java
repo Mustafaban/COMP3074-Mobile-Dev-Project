@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.comp3074_mobile_dev_project.AboutActivity;
 import com.example.comp3074_mobile_dev_project.MainActivity;
+import com.example.comp3074_mobile_dev_project.MapsActivity;
 import com.example.comp3074_mobile_dev_project.ProfileActivity;
 import com.example.comp3074_mobile_dev_project.R;
 import com.example.comp3074_mobile_dev_project.models.Restaurant;
@@ -80,4 +81,9 @@ public class SearchActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+    public void toMap(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
 }
